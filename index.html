@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--META information-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Activity Generator">
+        <meta name="keywords" content="HTML,CSS,JavaScript, Activities, API">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--End of META information-->
+
+        <title>Activity Generator</title>
+
+        <!--CUSTOM CSS FILE-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--FONTAWESOME CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <!-- Activity Container -->
+        <div class="container">
+             <!-- Activity to be Displayed Here -->
+            <h1>
+                <i class="fas fa-activity-left"></i>Activity: 
+                <span class="activity" id="activity"></span>
+                <i class="fas fa-activity-right"></i>
+            </h1>
+            <h3>
+                <i class="fas fa-activity-left"></i> Type:
+                <span class="activity-type" id="activity-type"></span>
+                <i class="fas fa-activity-right"></i>
+            </h3>
+            <h3>
+                <i class="fas fa-activity-left"></i> No. of Participants involved:
+                <span class="participant" id="participant"></span>
+                <i class="fas fa-activity-right"></i>
+            </h3>
+            <h3>
+                <i class="fas fa-activity-left"></i> Link:
+                <span class="link" id="link"></span>
+                <i class="fas fa-activity-right"></i>
+                </h3>
+            <hr/>
+            <div class="buttons">
+              
+                <!--Add an onclick event on 'next activity' button. Upon the click of a button, a new random activity is generated-->
+                <button class="next" onclick="getNewActivity()">Next activity</button>
+            </div>
+        </div>
+
+        <!--CUSTOM JS FILE-->
+        <script src="script.js"></script>
+    </body>
+</html>
